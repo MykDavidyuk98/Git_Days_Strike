@@ -10,3 +10,5 @@ from accessify import private, protected
 # Що значить команда cd - change directory
 # Що значить команда ls - list, виводить список файлів та папок в поточній директорії
 # Що значить команда mkdir - make directory, створює нову папку
+
+# 
