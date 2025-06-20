@@ -107,3 +107,50 @@ import random
 
 # 5 Зворотній порядок
 # Створи новий список, елементи якого розташовані у зворотному порядку.
+
+# list_len = int(input("Задайте довжину списку: "))
+# arr_num = [random.randint(1,10) for x in range(list_len)]
+# print(arr_num)
+
+# arr_num = sorted(arr_num, reverse = True)
+# print(arr_num)
+
+# arr_num = [random.randint(2,11) for x in range(11)]
+# print(arr_num)
+# # arr_num.reverse()
+# # print(arr_num)
+
+# # Alternate option 
+# print(arr_num[::-1])
+
+# 6 Об'єднання двох списків
+# arr_num1 = [random.randint(2, 5) for x in range(5)]
+# arr_num2 = [random.randint(6,10) for x in range(5)]
+# print(arr_num1)
+# print(arr_num2)
+# sum_list = arr_num1 + arr_num2 
+# print(sum_list)
+
+# 7 Перевірка наявності елемента
+# Перевір, чи є певний елемент у списку.
+
+# arr_num = [random.randint(2, 13) for x in range(13)]
+# print(arr_num)
+
+# def bubble_sort(array: list) -> None:
+#     N = len(array)
+
+#     for x in range(N-1):
+
+#         for k in range(N-1-x):
+
+#             if arr_num[k] > arr_num[k+1]:
+#                 arr_num[k], arr_num[k+1] = arr_num[k+1], arr_num[k]
+
+# bubble_sort(arr_num)
+# print(arr_num)
+
+# found_num = int(input('Введіть елемент для пошуку в списку: '))
+
+# print(arr_num.index(found_num))
+
