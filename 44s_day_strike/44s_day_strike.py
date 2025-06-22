@@ -148,7 +148,6 @@ import random
 
 #2 Сортування цілих чисел за спаданням
 # Аналогічно до попереднього, але відсортувати список за спаданням.
-
 # arr_num = [random.randint(10, 25) for _ in range(8)]
 # print(arr_num)
 
@@ -168,4 +167,10 @@ import random
 
 # bubble_sort_descending(arr_num)
 # print(arr_num)
+
+#3 Сортування списку з від’ємними числами
+# Відсортуй список, що містить як додатні, так і від’ємні числа, за зростанням.
+
+arr_num = [random.randint(-10, 10) for _ in range(12)]
+print(arr_num)
 
