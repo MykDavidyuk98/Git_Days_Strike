@@ -52,3 +52,32 @@ class K18_07:
 
 # my_car = Car()
 # my_car.drive()
+
+# Який клас називають класом-контейнером? 
+# Класом - контейнером називають клас, який містить інші обєкти(інших класів) як свої атрибути.
+# Основна роль - обєднувати або керувати іншими обєктами, створюючи складну структуру
+# Ознаки класу контейнера: 1) Має один або кілька атрибутів, які є обєктами інших класів
+#                          2) Забезпечує доступ до функціоналу цих обєктів
+#                          3) Часто використовується в композиції 
+# Exapmle:
+
+# class CPU:
+#     def info(self):
+#         return "Processor: Intel I5" 
+    
+# class RAM:
+#     def info(self):
+#         return "RAM: 16GB"
+
+# # Клас-контейнер (Container-class), бо містить атрибути, які є обєктами класів CPU і RAM
+# class Computer:
+#     def __init__(self):
+#         self.cpu = CPU()
+#         self.ram = RAM()
+    
+#     def show_specs(self):
+#         print(self.cpu.info())
+#         print(self.ram.info())
+
+# pc = Computer()
+# pc.show_specs()
