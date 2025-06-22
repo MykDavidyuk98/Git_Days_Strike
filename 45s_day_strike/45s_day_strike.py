@@ -27,7 +27,27 @@ class K18_07:
         print(f'Загальна площа = {str(self.plzag)}см.кв')
         print(f'Залишок площі = {str(self.func2)}см.кв')
 
-ob = K18_07(30, 20)
-ob.func1 (4, 6, 5)
-ob.func2 ()
-ob.func3 ()
+# ob = K18_07(30, 20)
+# ob.func1 (4, 6, 5)
+# ob.func2 ()
+# ob.func3 ()
+
+# Example from GPT
+# Суть композиційного підходу в програмуванні полягає в тому, щоб створювати складні об’єкти з простіших, 
+# використовуючи включення одних класів у інші як атрибути.
+# Це дозволяє уникнути жорсткої ієрархії спадкування і зробити код гнучкішим і легшим для змін.
+
+# class Engine:
+#     def start(self):
+#         print("Engine start")
+    
+# class Car:
+#     def __init__(self):
+#         self.engine = Engine()
+    
+#     def drive(self):
+#         self.engine.start()
+#         print('Car is moving')
+
+# my_car = Car()
+# my_car.drive()
