@@ -93,3 +93,74 @@ class K18_07:
 # Один і той самий клас можна використати в різних об'єктах-контейнерах.
 # 📌 Висновок:
 # Композиція допомагає створювати гнучкий, зрозумілий і зручний для змін код, що особливо важливо в великих і складних проєктах.
+
+# 4 Поясніть сутність композиційного підходу в програмуванні на конкретному прикладі: 
+
+# class Battery:
+#     def info(self):
+#         return "4000 mAh"
+
+# class Screen:
+#     def info(self):
+#         return '6.5-inch OLED'
+
+# class Camera:
+#     def info(self):
+#         return "48 MP"
+
+# # Container - class
+# class Smartphone: 
+#     def __init__(self):
+#         self.baterry = Battery()
+#         self.camera = Camera()
+#         self.screen = Screen()
+    
+#     def show_specs(self):
+#         print(f'Screen: {self.screen.info()}')
+#         print(f'Baterry: {self.baterry.info()}')
+#         print(f'Camera: {self.camera.info()}')
+
+# # using Compositional method in OOP
+# phone = Smartphone()
+# phone.show_specs()
+
+# 🧠 Суть композиції тут в тому, що:
+# -Клас Smartphone не наслідує інші класи.
+# -Він включає (has-a) об’єкти інших класів як складові частини.
+# -Це дозволяє легко замінити або змінити окремий компонент (наприклад, нову батарею чи камеру) — не змінюючи решту класу.
+
+# 📌 Висновок:
+# Композиція — це коли "об’єкт складається з інших об’єктів", і ми будуємо складні системи з простіших модулів.
+
+# Exersice 1 from 8.3 st.143 
+
+class Book_A5:
+    def __init__(self, width, height):
+        self.plbook = width * height
+
+class Page_A4:
+    def __init__(self, width, height):
+        self.plpage = width * height
+
+class Desk:
+    def __init__(self, l, p):
+        self.pldesk = l * p
+    
+    def math_pl(self, book_w, book_h, page_w, page_h):
+        self.p1 = Book_A5(book_w, book_h)
+        self.p2 = Page_A4(page_w, page_h)
+    
+    def math_diff_pl(self):
+        self.math_diff = self.pldesk - (self.p1.plbook + self.p2.plpage)
+    
+    def show_pl(self):
+        print(f'Загальна площа столу: {str(self.pldesk)}см.кв')
+        print(f'Книга займає площу: {str(self.p1.plbook)}см.кв')
+        print(f'Аркуш займає площу: {str(self.p2.plpage)}см.кв')
+        print(f'Залишок площі = {str(self.math_diff)}см.кв')
+
+ob1 = Desk(10, 15)
+ob1.math_pl(5, 10, 2, 5)
+ob1.math_diff_pl()
+ob1.show_pl()
+        
